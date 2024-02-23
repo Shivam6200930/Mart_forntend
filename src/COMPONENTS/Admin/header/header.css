@@ -1,0 +1,21 @@
+.header{
+  background-color: rgb(59, 56, 56);
+}
+#cart1{
+  background-color:green;
+  padding: 15%;
+  border-radius: 8%;
+  text-decoration: none;
+  color:white;
+  display: block;
+}
+.c{
+  display: grid;
+  column-gap: 50px;
+ 
+}
+.product{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
