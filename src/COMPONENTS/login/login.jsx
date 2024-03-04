@@ -23,7 +23,7 @@ const Login = () => {
     });
   };
   const logins = () => {
-        axios.post("http://localhost:5858/api/users/login", user,{withCredentials: true})
+        axios.post("https://auth-back-mern-iigtj0ua0-shivam-mandals-projects.vercel.app/login", user,{withCredentials: true})
       .then(function (response) {
         if('mandalshivam962@gmail.com' === response.data.user.email) {
           Navigate('/admin') 
