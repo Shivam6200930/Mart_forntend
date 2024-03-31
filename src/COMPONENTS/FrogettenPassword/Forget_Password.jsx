@@ -23,7 +23,7 @@ function Forget_Password() {
         alert('Please enter your mail')
       }else{
       const response = await axios.post(
-        'http://localhost:5858/api/users/sendresetPassword',
+        'https://new-backend-pied.vercel.app/api/users/sendresetPassword',
         {
           email: user.email
         },
