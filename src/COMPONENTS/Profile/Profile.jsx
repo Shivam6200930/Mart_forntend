@@ -11,7 +11,7 @@ const Profile = () => {
   })
   async function func() {
     try{
-    const response=await axios.get("http://localhost:5858/api/users/loggedUser",{withCredentials:true})
+    const response=await axios.get("https://new-backend-pied.vercel.app/api/users/loggedUser",{withCredentials:true})
      const temp={
       name:response.data.user.name,
       email:response.data.user.email
@@ -27,7 +27,7 @@ const Profile = () => {
   },[])
   
   async function clearData (){
-       await axios.get("http://localhost:5858/api/users/logout",{withCredentials:true})
+       await axios.get("https://new-backend-pied.vercel.app/api/users/logout",{withCredentials:true})
        localStorage.clear()
     navigete('/')
   }
