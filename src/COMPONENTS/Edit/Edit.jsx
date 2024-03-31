@@ -25,7 +25,7 @@ function Edit() {
         alert('Name is required');  // Add a validation alert or handle it appropriately
         return;
       }
-      const response = await axios.put(`http://localhost:5858/api/users/edit/${id}`, { user_name: user.name }, { withCredentials: true });
+      const response = await axios.put(`https://new-backend-pied.vercel.app/api/users/edit/${id}`, { user_name: user.name }, { withCredentials: true });
       console.log(response);
       alert('Updated successfully!!');
       navigate("/profile");
